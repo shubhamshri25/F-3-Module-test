@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.main-heading {
+  margin: 2rem;
+}
+
+#btn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 20vw;
+  margin-left: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#info-container {
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 15rem;
+  display: none;
+}
+
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  width: 80vw;
+  padding-left: 5rem;
+}
+
+#timezone-container {
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+}
+
+span {
+  margin-left: 1rem;
+}
+
+input {
+  padding: 1rem;
+  padding-left: 1rem;
+  width: 90%;
+  margin: 1rem;
+  /* display: block; */
+}
+
+#post-office-container {
+  display: none;
+  flex-direction: column;
+  gap: 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+}
+
+.postlist {
+  border: 5px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#postOfficeList {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+}

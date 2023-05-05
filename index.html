@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postal Pincode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="getIpAddress()">
+
+    <h1 class="main-heading">MY Public IP ADDRESS : <span id="ip-add">Hacking your IP Adress... 👨‍💻</span></h1>
+    <button id="btn">Get Data</button>
+
+    <div id="info-container">
+        <div>
+            <div class="info"> <strong>Lat:</strong> <span id="lat"></span> </div>
+            <div class="info"> <strong>Long:</strong> <span id="long"></span> </div>
+        </div>
+
+        <div>
+            <div class="info"> <strong>City:</strong> <span id="city"></span></div>
+            <div class="info"> <strong>Region:</strong> <span id="region"></span></div>
+        </div>
+
+        <div>
+            <div class="info"> <strong>Organisation:</strong> <span id="org"></span></div>
+            <div class="info"> <strong>Hostname:</strong> <span id="host"></span></div>
+        </div>
+    </div>
+
+    <div id="map">
+        <iframe frameborder="0" width="500" height="300" style="border: 0;"></iframe>
+    </div>
+
+    <div id="timezone-container">
+        <div>
+            <div class="info"> <strong>Time Zone:</strong> <span id="time-zone"></span> </div>
+            <div class="info"> <strong>Date And Time:</strong> <span id="date-time"></span> </div>
+        </div>
+        <div>
+            <div class="info"> <strong>Pincode:</strong> <span id="pincode"></span> </div>
+            <div class="info"> <strong>Message: </strong> <span id="message"></span> </div>
+        </div>
+    </div>
+
+    <div id="post-office-container">
+        <input type="text" id="search" placeholder=" 🔍Filter" onkeyup="filterPostOffice()">
+        <div id="postOfficeList">
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
